@@ -1,0 +1,47 @@
+/* Reset */
+body, html, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fonte global */
+  body {
+    font-family: 'Titillium Web', sans-serif;
+  }
+  
+  /* Estilo da barra de navegação */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #47D4DD;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo img {
+    height: 50px; /* Ajuste o tamanho do logo conforme necessário */
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #014283; /* Cor secundária */
+  }
+  
