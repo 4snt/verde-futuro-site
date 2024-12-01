@@ -8,6 +8,7 @@ function getPtHtml() {
 <title>Política de Privacidade</title>
 </head>
 <body>
+<h1>Política de Privacidade</h1>
       <p>Última atualização: 1º de Dezembro de 2024</p>
       <h3>Definições</h3>
       <p>Para os fins desta Política de Privacidade:</p>

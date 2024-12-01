@@ -44,4 +44,53 @@ body, html, ul, li {
   .navbar-links a:hover {
     color: #014283; /* Cor secundária */
   }
+  nav {
+    position: relative;
+  }
   
+  nav div {
+    transition: max-height 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+  }
+  
+  /* Estilo para o menu toggle (hamburger) */
+  .navbar-toggle {
+    display: none; /* Esconde o botão por padrão */
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Estilo para a lista de links */
+  .navbar-links {
+    display: flex; /* Exibe os links em linha */
+    list-style: none;
+  }
+  
+  /* Estilo para o menu ativo */
+  .navbar-links.active {
+    display: block; /* Exibe os links em bloco quando ativo */
+    position: absolute; /* Para sobrepor outros elementos */
+    background-color: #47D4DD; /* Cor de fundo do menu */
+    width: 100%; /* Largura total */
+    top: 60px; /* Ajuste conforme necessário */
+    left: 0;
+  }
+  
+  /* Media query para telas menores */
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none; /* Esconde os links em telas pequenas */
+    }
+  
+    .navbar-toggle {
+      display: block; /* Exibe o botão hamburger em telas pequenas */
+    }
+  
+    .navbar-links.active {
+      display: block; /* Exibe os links em bloco quando ativo */
+    }
+  }
