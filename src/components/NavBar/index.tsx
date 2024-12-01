@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logonavbar.svg';
 import './styles.css';
@@ -10,6 +10,27 @@ const NavBar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    // Função para lidar com o redimensionamento da tela
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsOpen(false);
+      }
+    };
+
+    // Adicionar event listener para redimensionamento da janela
+    window.addEventListener('resize', handleResize);
+
+    // Limpar o event listener ao desmontar o componente
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -20,10 +41,10 @@ const NavBar: React.FC = () => {
       </div>
       <ul className={`navbar-links ${isOpen ? 'active' : ''}`}>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={closeMenu}>Home</Link>
         </li>
         <li>
-          <Link to="/terms">Termos de Uso</Link>
+          <Link to="/terms" onClick={closeMenu}>Termos de Uso</Link>
         </li>
         {/* Adicione mais links conforme necessário */}
       </ul>

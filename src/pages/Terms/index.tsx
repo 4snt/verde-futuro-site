@@ -55,7 +55,6 @@ const TermsOfService: React.FC = () => {
           margin: '0 auto',
         }}
       >
-        {/* Renderiza o conteúdo HTML correspondente ao idioma */}
         <div dangerouslySetInnerHTML={{ __html: selectedContent }} style={{ color: '#014283' }} />
       </div>
     </div>
