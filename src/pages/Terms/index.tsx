@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { getPtHtml } from './pt-br';
-import { getEnHtml} from './Ing-Intl';
+import { getEnHtml } from './Ing-Intl';
 
-const PrivacyPolicy: React.FC = () => {
+const TermsOfService: React.FC = () => {
   const [language, setLanguage] = useState<'pt' | 'en'>('en');
   const content = {
     pt: getPtHtml(),
-    en: getEnHtml(), 
+    en: getEnHtml(),
   };
 
   const selectedContent = content[language];
@@ -44,10 +44,22 @@ const PrivacyPolicy: React.FC = () => {
         </button>
       </div>
 
-      {/* Renderiza o conteúdo HTML correspondente ao idioma */}
-      <div dangerouslySetInnerHTML={{ __html: selectedContent }} />
+      {/* Faixa envolta do texto */}
+      <div
+        style={{
+          padding: '20px',
+          border: '1px solid #47D4DD',
+          borderRadius: '10px',
+          backgroundColor: '#F4FFFE',
+          maxWidth: '800px',
+          margin: '0 auto',
+        }}
+      >
+        {/* Renderiza o conteúdo HTML correspondente ao idioma */}
+        <div dangerouslySetInnerHTML={{ __html: selectedContent }} style={{ color: '#014283' }} />
+      </div>
     </div>
   );
 };
 
-export default PrivacyPolicy;
+export default TermsOfService;
