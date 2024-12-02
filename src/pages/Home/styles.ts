@@ -1,9 +1,21 @@
 import { CSSProperties } from 'react';
 
+// Define common button styles outside of the export to keep it reusable.
+const buttonBase: CSSProperties = {
+  padding: '10px 20px',
+  fontSize: '16px',
+  cursor: 'pointer',
+  borderRadius: '5px',
+  fontWeight: 'bold',
+  textTransform: 'none',
+  width: '100px',
+  textAlign: 'center',
+};
+
 export const styles: { [key: string]: CSSProperties } = {
   container: {
     display: 'flex',
-    flexDirection: 'column' as 'column',
+    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
     padding: '20px',
@@ -29,30 +41,16 @@ export const styles: { [key: string]: CSSProperties } = {
     marginBottom: '30px',
   },
   button: {
-    padding: '10px 20px',
-    fontSize: '16px',
-    cursor: 'pointer',
+    ...buttonBase,
     backgroundColor: '#F4FFFE',
     color: '#014283',
     border: '2px solid #47D4DD',
-    borderRadius: '5px',
-    fontWeight: 'bold',
-    textTransform: 'none',
-    width: '100px',
-    textAlign: 'center',
   },
   activeButton: {
-    padding: '10px 20px',
-    fontSize: '16px',
-    cursor: 'pointer',
+    ...buttonBase,
     backgroundColor: '#47D4DD',
     color: '#fff',
     border: '2px solid #47D4DD',
-    borderRadius: '5px',
-    fontWeight: 'bold',
-    textTransform: 'none',
-    width: '100px',
-    textAlign: 'center',
   },
   tutorialContainer: {
     width: '100%',
@@ -82,13 +80,9 @@ export const styles: { [key: string]: CSSProperties } = {
     fontWeight: 'bold',
   },
   downloadButton: {
-    padding: '10px 20px',
-    fontSize: '16px',
-    cursor: 'pointer',
+    ...buttonBase,
     backgroundColor: '#F4FFFE',
     color: '#014283',
     border: '2px solid #47D4DD',
-    borderRadius: '5px',
-    fontWeight: 'bold',
   },
-}; 
+};
