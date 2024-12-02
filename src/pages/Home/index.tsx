@@ -37,11 +37,14 @@ const Home: React.FC = () => {
                 download
                 style={styles.link}
               >
+                <>
+                style={styles.container}
                 <button
                   style={styles.downloadButton}
                 >
                   Baixar APK
                 </button>
+                </>
               </a>
               <li>
                 Após o download, localize o arquivo na pasta de downloads e clique para abrir.
@@ -87,11 +90,14 @@ const Home: React.FC = () => {
                 rel="noopener noreferrer"
                 style={styles.link}
               >
+                <>
+                style={styles.container}
                 <button
                   style={styles.downloadButton}
                 >
                   Baixar TestFlight
                 </button>
+                </>
               </a>
               <li>
                 Clique no botão abaixo para acessar o aplicativo Verde Futuro no TestFlight:
@@ -102,11 +108,14 @@ const Home: React.FC = () => {
                 rel="noopener noreferrer"
                 style={styles.link}
               >
+                <>
+                style={styles.container}
                 <button
                   style={styles.downloadButton}
-                >
+                  >
                   Baixar via TestFlight
                 </button>
+                  </>
               </a>
               <li>
                 Abra o TestFlight, localize o aplicativo Verde Futuro e clique em{' '}
