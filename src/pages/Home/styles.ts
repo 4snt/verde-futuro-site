@@ -38,6 +38,7 @@ export const styles: { [key: string]: CSSProperties } = {
     borderRadius: '5px',
     fontWeight: 'bold',
     textTransform: 'none',
+    width: '100',
   },
   activeButton: {
     padding: '10px 20px',
@@ -49,6 +50,7 @@ export const styles: { [key: string]: CSSProperties } = {
     borderRadius: '5px',
     fontWeight: 'bold',
     textTransform: 'none',
+    width: '100'
   },
   tutorialContainer: {
     width: '100%',
