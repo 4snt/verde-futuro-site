@@ -5,11 +5,12 @@ const buttonBase: CSSProperties = {
   padding: '10px 20px',
   fontSize: '16px',
   cursor: 'pointer',
-  borderRadius: '5px',
+  borderRadius: '25px', // Adjusted to make buttons look more rounded
   fontWeight: 'bold',
   textTransform: 'none',
-  width: '100px',
+  width: '180px',
   textAlign: 'center',
+  display: 'inline-block', // This helps in centering the button within the container
 };
 
 export const styles: { [key: string]: CSSProperties } = {
@@ -59,6 +60,7 @@ export const styles: { [key: string]: CSSProperties } = {
     border: '1px solid #47D4DD',
     borderRadius: '10px',
     backgroundColor: '#F4FFFE',
+    marginTop: '20px',
   },
   tutorialTitle: {
     fontSize: '24px',
@@ -69,6 +71,10 @@ export const styles: { [key: string]: CSSProperties } = {
     listStyleType: 'decimal',
     paddingLeft: '20px',
     textAlign: 'left',
+  },
+  buttonWrapper: {
+    textAlign: 'center',
+    margin: '10px 0',
   },
   footer: {
     marginTop: '30px',
@@ -81,8 +87,9 @@ export const styles: { [key: string]: CSSProperties } = {
   },
   downloadButton: {
     ...buttonBase,
-    backgroundColor: '#F4FFFE',
-    color: '#014283',
+    backgroundColor: '#47D4DD',
+    color: '#fff',
     border: '2px solid #47D4DD',
+    textDecoration: 'none',
   },
 };

@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { styles } from './styles';
 
 const Home: React.FC = () => {
   const [selectedPlatform, setSelectedPlatform] = React.useState<'android' | 'ios'>('android');
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent || navigator.vendor;
+    if (/android/i.test(userAgent)) {
+      setSelectedPlatform('android');
+    } else if (/iPad|iPhone|iPod/.test(userAgent)) {
+      setSelectedPlatform('ios');
+    }
+  }, []);
 
   return (
     <div style={styles.container}>
@@ -32,13 +41,13 @@ const Home: React.FC = () => {
             <h2 style={styles.tutorialTitle}>Tutorial para Android</h2>
             <ol style={styles.tutorialList}>
               <li>Clique no botão abaixo para baixar o APK:</li>
-              <li>
+              <li style={styles.buttonWrapper}>
                 <a
                   href="https://expo.dev/artifacts/eas/gY5yeiEBGsHvmk6dqKdCYR.apk"
                   download
-                  style={styles.link}
+                  style={styles.downloadButton}
                 >
-                  <button style={styles.downloadButton}>Baixar APK</button>
+                  Baixar APK
                 </a>
               </li>
               <li>
@@ -79,27 +88,27 @@ const Home: React.FC = () => {
               <li>
                 Acesse a App Store e baixe o aplicativo <strong>TestFlight</strong>:
               </li>
-              <li>
+              <li style={styles.buttonWrapper}>
                 <a
                   href="https://apps.apple.com/app/testflight/id899247664"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={styles.link}
+                  style={styles.downloadButton}
                 >
-                  <button style={styles.downloadButton}>Baixar TestFlight</button>
+                  Baixar TestFlight
                 </a>
               </li>
               <li>
                 Clique no botão abaixo para acessar o aplicativo Verde Futuro no TestFlight:
               </li>
-              <li>
+              <li style={styles.buttonWrapper}>
                 <a
                   href="https://testflight.apple.com/join/SKywEZPJ"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={styles.link}
+                  style={styles.downloadButton}
                 >
-                  <button style={styles.downloadButton}>Baixar via TestFlight</button>
+                  Baixar via TestFlight
                 </a>
               </li>
               <li>
