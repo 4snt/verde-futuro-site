@@ -160,7 +160,7 @@ function getPtHtml() {
       <h2>Contate-nos</h2>
       <p>Se você tiver alguma dúvida sobre esta Política de Privacidade, você pode nos contatar:</p>
       <ul>
-      <li>Visitando esta página em nosso site: <a href="verdefuturo.com/terms" rel="external nofollow noopener" target="_blank">verdefuturo.com/terms</a></li>
+      <li>Visitando esta página em nosso site: <a href="verdefuturo.com/terms" rel="external nofollow noopener" target="_blank">projetoverdefuturo.com.br/terms</a></li>
       </ul>
     `;
 
