@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Terms from './pages/Terms';
+import VerdeFuturoForm from './pages/RegisterForm';
 import NavBar from './components/NavBar';
 
 const App: React.FC = () => {
@@ -11,6 +12,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path= "/registerform" element={<VerdeFuturoForm />} />
       </Routes>
     </Router>
   );

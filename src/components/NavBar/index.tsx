@@ -44,9 +44,11 @@ const NavBar: React.FC = () => {
           <Link to="/" onClick={closeMenu}>Home</Link>
         </li>
         <li>
+          <Link to="/registerform" onClick={closeMenu}>Registro no app</Link>
+        </li>
+        <li>
           <Link to="/terms" onClick={closeMenu}>Termos de Uso</Link>
         </li>
-        {/* Adicione mais links conforme necessário */}
       </ul>
     </nav>
   );

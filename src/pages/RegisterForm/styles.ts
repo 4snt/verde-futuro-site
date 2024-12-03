@@ -1,16 +1,15 @@
 import { CSSProperties } from 'react';
 
-// Define common button styles outside of the export to keep it reusable.
 const buttonBase: CSSProperties = {
   padding: '10px 20px',
   fontSize: '16px',
   cursor: 'pointer',
-  borderRadius: '25px', // Adjusted to make buttons look more rounded
+  borderRadius: '25px',
   fontWeight: 'bold',
   textTransform: 'none',
   width: '180px',
   textAlign: 'center',
-  display: 'inline-block', // This helps in centering the button within the container
+  display: 'inline-block',
 };
 
 export const styles: { [key: string]: CSSProperties } = {
@@ -91,5 +90,17 @@ export const styles: { [key: string]: CSSProperties } = {
     color: '#fff',
     border: '2px solid #47D4DD',
     textDecoration: 'none',
+  },
+  selectField: {
+    padding: '10px',
+    marginBottom: '20px',
+    width: '100%',
+    maxWidth: '300px',
+  },
+  inputField: {
+    padding: '10px',
+    marginBottom: '20px',
+    width: '100%',
+    maxWidth: '300px',
   },
 };
