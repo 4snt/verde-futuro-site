@@ -160,7 +160,12 @@ function getPtHtml() {
       <h2>Contate-nos</h2>
       <p>Se você tiver alguma dúvida sobre esta Política de Privacidade, você pode nos contatar:</p>
       <ul>
-      <li>Visitando esta página em nosso site: <a href="www.projetoverdefuturo.com.br/terms" rel="external nofollow noopener" target="_blank">https://www.projetoverdefuturo.com.br/terms</a></li>
+      <li>
+        Visitando esta página em nosso site: 
+        <a href="https://www.projetoverdefuturo.com.br/terms" rel="external nofollow noopener" target="_blank">
+          Termos e Condições
+        </a>
+      </li>
       </ul>
     `;
 
