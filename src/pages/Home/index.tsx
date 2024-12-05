@@ -86,37 +86,17 @@ const Home: React.FC = () => {
             <h2 style={styles.tutorialTitle}>Tutorial para iOS</h2>
             <ol style={styles.tutorialList}>
               <li>
-                Acesse a App Store e baixe o aplicativo <strong>TestFlight</strong>:
+                Acesse a App Store e baixe o aplicativo <strong>VerdeFuturo</strong>:
               </li>
               <li style={styles.buttonWrapper}>
                 <a
-                  href="https://apps.apple.com/app/testflight/id899247664"
+                  href="https://apps.apple.com/br/app/verdefuturo/id6738054097"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={styles.downloadButton}
                 >
-                  Baixar TestFlight
+                  Baixar o APP
                 </a>
-              </li>
-              <li>
-                Clique no botão abaixo para acessar o aplicativo Verde Futuro no TestFlight:
-              </li>
-              <li style={styles.buttonWrapper}>
-                <a
-                  href="https://testflight.apple.com/join/SKywEZPJ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={styles.downloadButton}
-                >
-                  Baixar via TestFlight
-                </a>
-              </li>
-              <li>
-                Abra o TestFlight, localize o aplicativo Verde Futuro e clique em{' '}
-                <strong>Instalar</strong>.
-              </li>
-              <li>
-                Após a instalação, você pode abrir o aplicativo diretamente pela tela inicial.
               </li>
             </ol>
           </>
