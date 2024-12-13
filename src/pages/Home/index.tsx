@@ -43,7 +43,7 @@ const Home: React.FC = () => {
               <li>Clique no botão abaixo para baixar o APK:</li>
               <li style={styles.buttonWrapper}>
                 <a
-                  href="https://expo.dev/artifacts/eas/gY5yeiEBGsHvmk6dqKdCYR.apk"
+                  href="https://expo.dev/artifacts/eas/b1Jnt7BRAfzMggMPRLHsWK.apk"
                   download
                   style={styles.downloadButton}
                 >
